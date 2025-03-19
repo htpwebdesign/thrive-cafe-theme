@@ -126,7 +126,7 @@ function thrive_register_custom_post_types(){
         'attributes' => __('founders Attributes', 'textdomain'),
         'parent_item_colon' => __('Parent founders:', 'textdomain'),
         'all_items' => __('All founders', 'textdomain'),
-        'add_new_item' => __('Add New founders', 'textdomain'),
+        'add_new_item' => __('Add New founder', 'textdomain'),
         'add_new' => __('Add New', 'textdomain'),
         'new_item' => __('New founders', 'textdomain'),
         'edit_item' => __('Edit founders', 'textdomain'),

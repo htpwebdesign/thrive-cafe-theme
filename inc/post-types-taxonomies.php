@@ -56,6 +56,9 @@ function thrive_register_custom_post_types(){
         'show_in_nav_menus' => true,
         'can_export' => true,
         'has_archive' => false,
+        'rewrite' => array(
+                'slug' => 'founders',
+        ),
         'hierarchical' => false,
         'exclude_from_search' => false,
         'show_in_rest' => true,
@@ -63,7 +66,7 @@ function thrive_register_custom_post_types(){
         'capability_type' => 'post',
     );
     register_post_type('thrive-founders', $args);
-    
+
 }
 add_action( 'init', 'thrive_register_custom_post_types', 0 );
 

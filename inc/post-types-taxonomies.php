@@ -14,7 +14,7 @@ function thrive_register_custom_post_types(){
 
     $labels = array(
         'name' => _x('founders', 'Post Type General Name', 'textdomain'),
-        'singular_name' => _x('founders', 'Post Type Singular Name', 'textdomain'),
+        'singular_name' => _x('founder', 'Post Type Singular Name', 'textdomain'),
         'menu_name' => _x('Founders', 'Admin Menu text', 'textdomain'),
         'name_admin_bar' => _x('founders', 'Add New on Toolbar', 'textdomain'),
         'archives' => __('founders Archives', 'textdomain'),

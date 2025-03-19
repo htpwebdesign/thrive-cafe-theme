@@ -105,6 +105,12 @@ function thrive_register_custom_taxonomies() {
 		'show_tagcloud'              => true,
 		'show_in_rest'               => true,
 	);
+    $capabilities = array(
+		'manage_terms'               => 'do_not_allow',
+		'edit_terms'               => 'do_not_allow',
+		'delete_terms'               => 'do_not_allow',
+		'assign_terms'               => 'edit_posts',
+	);
 	register_taxonomy( 'thrive-location', array( 'thrive-jobs' ), $args );
 
 }

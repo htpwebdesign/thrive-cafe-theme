@@ -231,7 +231,7 @@ function auto_create_location_taxonomy_term($post_id, $post, $update) {
     $location = $post->post_title;
 
     if (!term_exists($location, 'thrive-location')) {
-        wp_insert_term($skill_name, 'thrive-location');
+        wp_insert_term($location, 'thrive-location');
     }
 }
 add_action('save_post', 'auto_create_location_taxonomy_term', 10, 3);

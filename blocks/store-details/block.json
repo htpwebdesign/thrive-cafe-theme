@@ -1,0 +1,16 @@
+{
+    "name": "acf/store-details",
+    "title": "Store Details",
+    "description": "A custom block to display store details.",
+    "style": [ "file:./store-detials.css" ],
+    "category": "formatting",
+    "icon": "store",
+    "keywords": ["store-details", "address", "email-address", "contact"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "store-detail.php"
+    },
+    "supports": {
+        "anchor": false
+    }
+}

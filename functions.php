@@ -17,6 +17,17 @@ function thrive_enqueues(){
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 
+function thrive_register_acf_blocks() {
+    /**
+     * We register our block's with WordPress's handy
+     * register_block_type();
+     *
+     * @link https://developer.wordpress.org/reference/functions/register_block_type/
+     */
+    register_block_type( __DIR__ . '/blocks/store-details' );
+}
+// Here we call our tt3child_register_acf_block() function on init.
+add_action( 'init', 'thrive_register_acf_blocks' );
 
 //Adding custom post types and custom taxonomies
 require get_template_directory() . '/inc/post-types-taxonomies.php';

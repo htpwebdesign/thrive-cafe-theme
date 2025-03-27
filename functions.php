@@ -8,6 +8,12 @@ function thrive_enqueues(){
 		array(), 
 		'12.1.0'
 	);
+	wp_enqueue_style(
+		'archive_products style',
+		get_theme_file_uri('assets/css/archive-products.css'),
+		array(),
+		'12.1.1'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 

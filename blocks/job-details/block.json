@@ -1,0 +1,16 @@
+{
+    "name": "acf/job-details",
+    "title": "Job Details",
+    "description": "A custom block to display job details.",
+    "style": [ "file:./job-detials.css" ],
+    "category": "formatting",
+    "icon": "job",
+    "keywords": ["job-details"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "job-details.php"
+    },
+    "supports": {
+        "anchor": false
+    }
+}

@@ -14,6 +14,18 @@ function thrive_enqueues(){
 		array(),
 		'12.1.1'
 	);
+	wp_enqueue_style(
+		'job-styles',
+		get_theme_file_uri('blocks/job-details/job-details.css'),
+		array(),
+		'12.1.2'
+	);
+	wp_enqueue_style(
+		'store-details-styles',
+		get_theme_file_uri('blocks/store-details/store-details.css'),
+		array(),
+		'12.1.3'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 
@@ -25,6 +37,7 @@ function thrive_register_acf_blocks() {
      * @link https://developer.wordpress.org/reference/functions/register_block_type/
      */
     register_block_type( __DIR__ . '/blocks/store-details' );
+    register_block_type( __DIR__ . '/blocks/job-details' );
 }
 // Here we call our tt3child_register_acf_block() function on init.
 add_action( 'init', 'thrive_register_acf_blocks' );

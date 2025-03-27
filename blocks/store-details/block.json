@@ -8,7 +8,7 @@
     "keywords": ["store-details", "address", "email-address", "contact"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "store-detail.php"
+        "renderTemplate": "store-details.php"
     },
     "supports": {
         "anchor": false

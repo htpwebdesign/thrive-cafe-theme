@@ -1,4 +1,4 @@
-.store-details {
+.store-details-block {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
@@ -7,17 +7,17 @@
     font-family: Arial, sans-serif;
 }
 
-.store-details p {
+.store-details-block p {
     margin: 8px 0;
     font-size: 16px;
     color: #333;
 }
 
-.store-details a {
+.store-details-block a {
     color: #0073aa;
     text-decoration: none;
 }
 
-.store-details a:hover {
+.store-details-block a:hover {
     text-decoration: underline;
 }

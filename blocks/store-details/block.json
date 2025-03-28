@@ -2,7 +2,7 @@
     "name": "acf/store-details",
     "title": "Store Details",
     "description": "A custom block to display store details.",
-    "style": [ "file:./store-detials.css" ],
+    "style": [ "file:./store-details.css" ],
     "category": "formatting",
     "icon": "store",
     "keywords": ["store-details", "address", "email-address", "contact"],

@@ -4,7 +4,8 @@
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 50rem;
 }
 
 /* Header styling */
@@ -15,7 +16,6 @@
 .job-details-header .job-title {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
 }
 
 /* Styling for individual job detail sections */
@@ -30,13 +30,11 @@
 .job-salary {
     font-size: 16px;
     font-weight: bold;
-    color: #444;
 }
 
 .job-description p {
     font-size: 16px;
     line-height: 1.5;
-    color: #555;
 }
 
 .job-requirements ul {
@@ -46,7 +44,6 @@
 
 .job-requirements li {
     font-size: 16px;
-    color: #555;
 }
 
 /* Styling for the job requirements section */
@@ -54,8 +51,4 @@
     background-color: #f4f4f4;
     padding: 10px;
     border-radius: 5px;
-}
-
-.job-requirements strong {
-    color: #333;
 }

@@ -2,50 +2,51 @@
 
 <!-- wp:group {"tagName":"main","layout":{"inherit":true,"type":"constrained"}} -->
 <main class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1} -->
-<h1 class="wp-block-heading has-text-align-center">BROWSE OUR MENU</h1>
+<h1 class="wp-block-heading has-text-align-center">Browse Our Menu</h1>
 <!-- /wp:heading -->
 
 <!-- wp:woocommerce/breadcrumbs /-->
 
 <!-- wp:woocommerce/store-notices /-->
 
-<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search a menu item...","buttonText":"Search","buttonPosition":"button-inside","align":"center"} /-->
+<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search Menu Items…","width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","query":{"post_type":"product"},"align":"center","namespace":"woocommerce/product-search"} /-->
 
-<!-- wp:buttons {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
-<div class="wp-block-buttons alignwide"><!-- wp:button {"backgroundColor":"custom-grey","textColor":"custom-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-white-color has-custom-grey-background-color has-text-color has-background has-link-color wp-element-button" href="#bowl-category">Bowls</a></div>
+<!-- wp:buttons {"align":"wide","className":"category-buttons","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
+<div class="wp-block-buttons alignwide category-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bowl-category">Bowls</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"custom-grey","textColor":"custom-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-white-color has-custom-grey-background-color has-text-color has-background has-link-color wp-element-button" href="#sandwich-category">Sandwiches</a></div>
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#sandwich-category">Sandwiches</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"custom-grey","textColor":"custom-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-white-color has-custom-grey-background-color has-text-color has-background has-link-color wp-element-button" href="#soup-category">Soups</a></div>
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#soup-category">Soups</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"custom-grey","textColor":"custom-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-white-color has-custom-grey-background-color has-text-color has-background has-link-color wp-element-button" href="#baked-category">Baked Goods</a></div>
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#baked-category">Baked Goods</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"custom-grey","textColor":"custom-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-white-color has-custom-grey-background-color has-text-color has-background has-link-color wp-element-button" href="#beverages-category">Beverages</a></div>
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#beverages-category">Beverages</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"custom-grey","textColor":"custom-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-white-color has-custom-grey-background-color has-text-color has-background has-link-color wp-element-button" href="#combos-category">Combos</a></div>
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#combos-category">Combos</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"custom-grey","textColor":"custom-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-white-color has-custom-grey-background-color has-text-color has-background has-link-color wp-element-button">Gift Cards</a></div>
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Gift Cards</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:heading {"textAlign":"left","align":"wide"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left" id="bowl-category">Bowls</h2>
+<!-- wp:group {"tagName":"section","align":"wide","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignwide" id="bowl-category"><!-- wp:heading {"textAlign":"left","align":"wide"} -->
+<h2 class="wp-block-heading alignwide has-text-align-left">Bowls</h2>
 <!-- /wp:heading -->
 
-<!-- wp:woocommerce/product-collection {"queryId":11,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[23]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
+<!-- wp:woocommerce/product-collection {"queryId":0,"query":{"perPage":4,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[23]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
 <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template {"className":"food-card"} -->
 <!-- wp:woocommerce/product-image {"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
 
@@ -57,11 +58,19 @@
 <!-- /wp:woocommerce/product-template --></div>
 <!-- /wp:woocommerce/product-collection -->
 
-<!-- wp:heading {"textAlign":"left","align":"wide"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left" id="sandwich-category">Sandwiches</h2>
+<!-- wp:buttons {"align":"wide","className":"view-all-button","layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-buttons alignwide view-all-button"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="../product-category/bowl">View All</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"wide","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignwide" id="sandwich-category"><!-- wp:heading {"textAlign":"left","align":"wide"} -->
+<h2 class="wp-block-heading alignwide has-text-align-left">Sandwiches</h2>
 <!-- /wp:heading -->
 
-<!-- wp:woocommerce/product-collection {"queryId":12,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[24]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
+<!-- wp:woocommerce/product-collection {"queryId":1,"query":{"perPage":4,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[24]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
 <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template {"className":"food-card"} -->
 <!-- wp:woocommerce/product-image {"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
 
@@ -73,11 +82,19 @@
 <!-- /wp:woocommerce/product-template --></div>
 <!-- /wp:woocommerce/product-collection -->
 
-<!-- wp:heading {"textAlign":"left","align":"wide","className":"food-card"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left food-card" id="soup-category">Soups</h2>
+<!-- wp:buttons {"align":"wide","className":"view-all-button","layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-buttons alignwide view-all-button"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="../product-category/sandwhiches">View All</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"wide","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignwide" id="soup-category"><!-- wp:heading {"textAlign":"left","align":"wide","className":"food-card"} -->
+<h2 class="wp-block-heading alignwide has-text-align-left food-card">Soups</h2>
 <!-- /wp:heading -->
 
-<!-- wp:woocommerce/product-collection {"queryId":13,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[27]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide","className":"food-card"} -->
+<!-- wp:woocommerce/product-collection {"queryId":2,"query":{"perPage":4,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[27]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide","className":"food-card"} -->
 <div class="wp-block-woocommerce-product-collection alignwide food-card"><!-- wp:woocommerce/product-template {"className":"food-card"} -->
 <!-- wp:woocommerce/product-image {"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
 
@@ -89,11 +106,19 @@
 <!-- /wp:woocommerce/product-template --></div>
 <!-- /wp:woocommerce/product-collection -->
 
-<!-- wp:heading {"textAlign":"left","align":"wide","className":"food-card"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left food-card" id="baked-category">Baked Goods</h2>
+<!-- wp:buttons {"align":"wide","className":"view-all-button","layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-buttons alignwide view-all-button"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="../product-category/soups">View All</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"wide","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignwide" id="baked-category"><!-- wp:heading {"textAlign":"left","align":"wide","className":"food-card"} -->
+<h2 class="wp-block-heading alignwide has-text-align-left food-card">Baked Goods</h2>
 <!-- /wp:heading -->
 
-<!-- wp:woocommerce/product-collection {"queryId":14,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[26]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide","className":"food-card"} -->
+<!-- wp:woocommerce/product-collection {"queryId":3,"query":{"perPage":4,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[26]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide","className":"food-card"} -->
 <div class="wp-block-woocommerce-product-collection alignwide food-card"><!-- wp:woocommerce/product-template {"className":"food-card"} -->
 <!-- wp:woocommerce/product-image {"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
 
@@ -105,11 +130,19 @@
 <!-- /wp:woocommerce/product-template --></div>
 <!-- /wp:woocommerce/product-collection -->
 
-<!-- wp:heading {"textAlign":"left","align":"wide","className":"food-card"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left food-card" id="beverages-category">Beverages</h2>
+<!-- wp:buttons {"align":"wide","className":"view-all-button","layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-buttons alignwide view-all-button"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="../product-category/baked-goods">View All</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"wide","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignwide" id="beverages-category"><!-- wp:heading {"textAlign":"left","align":"wide","className":"food-card"} -->
+<h2 class="wp-block-heading alignwide has-text-align-left food-card">Beverages</h2>
 <!-- /wp:heading -->
 
-<!-- wp:woocommerce/product-collection {"queryId":15,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[25]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":true,"woocommerceStockStatus":[],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide","className":"food-card"} -->
+<!-- wp:woocommerce/product-collection {"queryId":4,"query":{"perPage":4,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[25]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":true,"woocommerceStockStatus":[],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide","className":"food-card"} -->
 <div class="wp-block-woocommerce-product-collection alignwide food-card"><!-- wp:woocommerce/product-template {"className":"food-card"} -->
 <!-- wp:woocommerce/product-image {"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
 
@@ -121,11 +154,19 @@
 <!-- /wp:woocommerce/product-template --></div>
 <!-- /wp:woocommerce/product-collection -->
 
-<!-- wp:heading {"textAlign":"left","align":"wide"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left" id="combos-category">Combos</h2>
+<!-- wp:buttons {"align":"wide","className":"view-all-button","layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-buttons alignwide view-all-button"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="../product-category/beverages">View All</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"wide","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignwide" id="combos-category"><!-- wp:heading {"textAlign":"left","align":"wide"} -->
+<h2 class="wp-block-heading alignwide has-text-align-left">Combos</h2>
 <!-- /wp:heading -->
 
-<!-- wp:woocommerce/product-collection {"queryId":16,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[32]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":true,"woocommerceStockStatus":[],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
+<!-- wp:woocommerce/product-collection {"queryId":5,"query":{"perPage":4,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":false,"taxQuery":{"product_cat":[32]},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":true,"woocommerceStockStatus":[],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
 <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template {"className":"food-card"} -->
 <!-- wp:woocommerce/product-image {"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
 
@@ -135,7 +176,14 @@
 
 <!-- wp:woocommerce/product-button {"textAlign":"center","isDescendentOfQueryLoop":true,"fontSize":"small"} /-->
 <!-- /wp:woocommerce/product-template --></div>
-<!-- /wp:woocommerce/product-collection --></main>
+<!-- /wp:woocommerce/product-collection -->
+
+<!-- wp:buttons {"align":"wide","className":"view-all-button","layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-buttons alignwide view-all-button"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="../product-category/combo">View All</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer"} /-->

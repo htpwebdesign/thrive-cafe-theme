@@ -1,0 +1,51 @@
+.post-type-archive-product main{
+    padding: 0 1rem;
+}
+
+.post-type-archive-product h1{
+    text-transform: uppercase;
+}
+
+.post-type-archive-product .category-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 50rem;
+
+    @media(min-width: 30em){
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media(min-width: 50em){
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+}
+
+.post-type-archive-product .category-buttons .wp-block-button a{
+    background-color: #ffffff;
+    border-radius: 0px;
+    border: #3b3b3b 1px solid;
+    padding: 0.75rem 0.15rem;
+    width: 100%;
+    /* min-width: 7rem */
+}
+.post-type-archive-product .category-buttons .wp-block-button a:hover{
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.post-type-archive-product section .view-all-button .wp-block-button__link {
+                    background-color: white;
+                    text-decoration: underline;
+
+}
+.post-type-archive-product section .view-all-button .wp-block-button__link::after {
+                    content: " →";
+                    height: fit-content;
+}
+.post-type-archive-product section .view-all-button .wp-block-button__link:hover{
+                    background-color: #3b3b3b;
+                    color: white;
+                    border-radius: 0px;
+}

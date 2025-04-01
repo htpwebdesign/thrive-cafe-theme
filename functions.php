@@ -9,8 +9,8 @@ function thrive_enqueues(){
 		'12.1.0'
 	);
 	wp_enqueue_style(
-		'archive_products style',
-		get_theme_file_uri('assets/css/archive-products.css'),
+		'product_cards style',
+		get_theme_file_uri('assets/css/product-card.css'),
 		array(),
 		'12.1.1'
 	);
@@ -25,6 +25,12 @@ function thrive_enqueues(){
 		get_theme_file_uri('blocks/store-details/store-details.css'),
 		array(),
 		'12.1.3'
+	);
+	wp_enqueue_style(
+		'archive_products style',
+		get_theme_file_uri('assets/css/archive-product.css'),
+		array(),
+		'12.1.4'
 	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
@@ -41,6 +47,14 @@ function thrive_register_acf_blocks() {
 }
 // Here we call our tt3child_register_acf_block() function on init.
 add_action( 'init', 'thrive_register_acf_blocks' );
+
+/**
+ * Lower Yoast SEO Metabox location
+ */
+function yoast_to_bottom(){
+	return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoast_to_bottom' );
 
 //Adding custom post types and custom taxonomies
 require get_template_directory() . '/inc/post-types-taxonomies.php';

@@ -1,4 +1,4 @@
-.post-type-archive-product .wp-block-woocommerce-product-collection ul.food-card .wc-block-product.product{
+.wc-block-product.product{
     display: flex;
     flex-direction: column;
     justify-content: space-between;

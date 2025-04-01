@@ -38,6 +38,18 @@ function thrive_enqueues(){
 		array(),
 		'12.1.4'
 	);
+	wp_enqueue_style(
+		'header-styles',
+		get_theme_file_uri('assets/css/header.css'),
+		array(),
+		'12.1.15'
+	);
+	wp_enqueue_style(
+		'location-styles',
+		get_theme_file_uri('assets/css/archive-thrive-locations.css'),
+		array(),
+		'12.1.18'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 

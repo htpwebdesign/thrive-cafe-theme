@@ -53,6 +53,7 @@
 
 /*Stylinf the archive for product categories, product tags*/
 .archive.tax-product_cat main,
-.archive.tax-product_tag main{
+.archive.tax-product_tag main,
+{
     padding: 1rem;
 }

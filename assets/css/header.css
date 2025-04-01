@@ -1,0 +1,17 @@
+.wp-block-template-part .wp-block-group-is-layout-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+.wp-block-template-part .wp-block-button__link.wp-element-button{
+    display: none;
+}
+@media (min-width: 800px) {
+    .wp-block-template-part .wp-block-group-is-layout-flex{
+       gap: 1rem;
+    }
+    .wp-block-template-part .wp-block-button__link.wp-element-button{
+        display: inline-block;
+    }
+}

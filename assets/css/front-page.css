@@ -2,10 +2,10 @@
     margin-top: 0px;
 }
 .page-id-82 .wp-site-blocks .wp-block-group .wc-block-featured-category.alignnone.has-background-dim.wp-block-woocommerce-featured-category{
-    min-width: 300px;
+    min-width: 200px;
 }
 .page-id-82 .wc-block-featured-category__wrapper{
-    min-height: 250px;
+    min-height: 200px;
 }
 .page-id-82 .wp-site-blocks .wp-block-group-is-layout-grid{
     display: flex;

@@ -26,6 +26,12 @@ function thrive_enqueues(){
 		array(),
 		'12.1.3'
 	);
+    wp_enqueue_style(
+		'front-apge-styles',
+		get_theme_file_uri('assets/css/front-page.css'),
+		array(),
+		'12.1.4'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 

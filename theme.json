@@ -31,8 +31,8 @@
 			]
 		},
 		"layout": {
-			"contentSize": "50rem",
-			"wideSize": "62.5rem"
+			"contentSize": "75rem",
+			"wideSize": "75rem"
 		},
 		"spacing": {
 			"units": [

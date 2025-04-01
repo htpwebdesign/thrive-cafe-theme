@@ -2,6 +2,11 @@
 
 
 function thrive_enqueues(){
+	wp_enqueue_style(
+		'thrive-style',
+		get_theme_file_uri( 'style.css' ),
+		array(),
+		'12.0.0');
     wp_enqueue_style( 
 		'thrive-normalize', 
 		get_theme_file_uri( 'assets/css/normalize.css'), 
@@ -38,6 +43,20 @@ function thrive_enqueues(){
 		array(),
 		'12.1.4'
 	);
+
+
+	wp_enqueue_style(
+		'careers archive styles',
+		get_theme_file_uri('assets/css/archive-careers.css'),
+		array(),
+		'12.1.6'
+	);
+	wp_enqueue_style(
+		'single job styles',
+		get_theme_file_uri('assets/css/individual-job.css'),
+		array(),
+		'12.1.7'
+    );
 	wp_enqueue_style(
 		'header-styles',
 		get_theme_file_uri('assets/css/header.css'),

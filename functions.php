@@ -38,6 +38,13 @@ function thrive_enqueues(){
 		array(),
 		'12.1.4'
 	);
+
+	wp_enqueue_style(
+		'careers archive styles',
+		get_theme_file_uri('assets/css/archive-careers.css'),
+		array(),
+		'12.1.6'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 

@@ -69,6 +69,12 @@ function thrive_enqueues(){
 		array(),
 		'12.1.18'
 	);
+	wp_enqueue_style(
+		'user account page styles',
+		get_theme_file_uri('assets/css/user-account.css'),
+		array(),
+		'12.1.9'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 

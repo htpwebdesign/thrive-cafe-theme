@@ -1,17 +1,27 @@
-.wp-block-template-part .wp-block-group-is-layout-flex{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0;
+.wp-block-template-part .wp-block-group-is-layout-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
 }
-.wp-block-template-part .wp-block-button__link.wp-element-button{
-    display: none;
+.wp-block-template-part .wp-block-button__link.wp-element-button {
+  display: none;
 }
+
+.wp-block-navigation-item__content {
+  padding: 0.5rem;
+}
+
+.wp-block-navigation-item__content:hover {
+  background-color: #515151;
+  border-radius: 5px;
+}
+
 @media (min-width: 800px) {
-    .wp-block-template-part .wp-block-group-is-layout-flex{
-       gap: 1rem;
-    }
-    .wp-block-template-part .wp-block-button__link.wp-element-button{
-        display: inline-block;
-    }
+  .wp-block-template-part .wp-block-group-is-layout-flex {
+    gap: 1rem;
+  }
+  .wp-block-template-part .wp-block-button__link.wp-element-button {
+    display: inline-block;
+  }
 }

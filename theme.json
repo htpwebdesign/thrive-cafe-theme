@@ -256,6 +256,77 @@
 					"fontFamily": "Inter, sans-serif",
 					"name": "Inter",
 					"slug": "inter"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-900-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-700-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-800-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "250",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-250-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-300-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-500-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-400-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "\"League Spartan\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/league-spartan/league-spartan-600-normal.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"League Spartan\"",
+					"name": "League Spartan",
+					"slug": "league-spartan"
 				}
 			]
 		},
@@ -284,6 +355,17 @@
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--inter)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--league-spartan)",
+					"fontSize": "var(--wp--preset--font-size--x-large)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--league-spartan)"
 				}
 			},
 			"heading": {

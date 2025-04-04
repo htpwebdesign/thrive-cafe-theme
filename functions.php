@@ -75,6 +75,12 @@ function thrive_enqueues(){
 		array(),
 		'12.1.9'
 	);
+	wp_enqueue_style(
+		'individual product styles',
+		get_theme_file_uri('assets/css/individual-product.css'),
+		array(),
+		'12.1.10'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 

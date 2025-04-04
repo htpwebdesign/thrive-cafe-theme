@@ -7,6 +7,12 @@
 .wp-block-template-part .wp-block-button__link.wp-element-button{
     display: none;
 }
+.wp-block-template-part .wp-block-group.is-layout-flex.wp-block-group-is-layout-flex .wp-block-site-logo{
+    margin-left: 1em;
+}
+.wp-block-template-part .wp-block-group.is-nowrap{
+    margin-right: 1rem;
+}
 @media (min-width: 800px) {
     .wp-block-template-part .wp-block-group-is-layout-flex{
        gap: 1rem;

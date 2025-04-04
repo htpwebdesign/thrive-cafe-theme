@@ -13,6 +13,14 @@
 .wp-block-template-part .wp-block-group.is-nowrap{
     margin-right: 1rem;
 }
+.wp-block-navigation-item__content {
+    padding: 0.5rem;
+}
+  
+ .wp-block-navigation-item__content:hover {
+    background-color: #515151;
+    border-radius: 5px;
+}
 @media (min-width: 800px) {
     .wp-block-template-part .wp-block-group-is-layout-flex{
        gap: 1rem;

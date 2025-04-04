@@ -5,7 +5,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 50rem;
+    max-width: 75rem;
 }
 
 /* Header styling */
@@ -19,36 +19,31 @@
 }
 
 /* Styling for individual job detail sections */
-.job-start-date,
+.job-contact,
 .job-salary,
 .job-description,
 .job-requirements {
     margin-bottom: 15px;
 }
 
-.job-start-date,
-.job-salary {
-    font-size: 16px;
-    font-weight: bold;
-}
 
 .job-description p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
 .job-requirements ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
 .job-requirements li {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Styling for the job requirements section */
 .job-requirements {
     background-color: #f4f4f4;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 5px;
 }

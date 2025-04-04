@@ -1,0 +1,65 @@
+.product-template-default.single-product main{
+    padding: 1rem;
+}
+
+
+
+.product-template-default.single-product main .info-column{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.product-template-default.single-product main .info-column h1{
+    width: 100%;
+}
+
+.product-template-default.single-product .woocommerce form .form-row::after, .woocommerce form .form-row::before, .woocommerce-page form .form-row::after, .woocommerce-page form .form-row::before {
+    display: none;
+}
+.product-template-default.single-product main .wc-pao-addons-container .form-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 1rem ;
+}
+.product-template-default.single-product main .wc-pao-addons-container .form-row div input{
+    display: none;
+} 
+
+.product-template-default.single-product main .wc-pao-addons-container .form-row div input + label{
+    padding: 0.5rem 1rem;
+    border: #3b3b3b 1px solid;
+}
+.product-template-default.single-product main .wc-pao-addons-container .form-row div input:checked + label{
+    padding: 0.5rem 1rem;
+    border: #3b3b3b 1px solid;
+    background-color: #3b3b3b;
+    color: white;
+}
+
+
+.product-template-default.single-product main .wp-block-woocommerce-product-details .woocommerce-Tabs-panel{
+    background-color: #ededed;
+    padding: 0.5rem;
+}
+
+.product-template-default.single-product main .wp-block-woocommerce-product-details .comment-reply-title{
+    font-size: 1rem;
+}
+
+@media (min-width:30em) {
+
+    .product-template-default.single-product main .info-column .product-description{
+        max-width: 50%;
+    }
+}
+@media (min-width:50em) {
+
+    .product-template-default.single-product main .info-column .product-description{
+        max-width: 100%;
+    }
+}

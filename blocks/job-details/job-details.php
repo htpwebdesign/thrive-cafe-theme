@@ -4,6 +4,7 @@ if( get_post_type() === 'thrive-jobs' ) :
 
     $post_id = get_the_ID();
     $job_start_date = get_field('job_start_date',$post_id);
+    $job_contact = get_field('contact_person',$post_id);
     $salary = get_field('salary',$post_id);
     $description = get_field('description',$post_id);
     $requirements = get_field('requirements',$post_id); 
@@ -25,7 +26,11 @@ if( get_post_type() === 'thrive-jobs' ) :
                 <strong>Start Date:</strong> <?php echo esc_html( $job_start_date ); ?>
             </div>
         <?php endif; ?>
-        
+        <?php if( $job_contact ): ?>
+            <div class="job-contact">
+                <strong>Contact Email:</strong> <?php echo esc_html( $job_contact ); ?>
+            </div>
+        <?php endif; ?>
         <?php if( $salary ): ?>
             <div class="job-salary">
                 <strong>Salary:</strong> <?php echo esc_html( $salary ); ?>

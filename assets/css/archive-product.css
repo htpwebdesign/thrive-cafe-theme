@@ -60,3 +60,8 @@
 .wc-block-components-product-button__button{
     border-radius: 0px;
 }
+.wc-block-components-product-button__button:hover,
+.wp-block-search__button:hover,
+.single_add_to_cart_button:hover{
+    background-color: #f78d13;
+}

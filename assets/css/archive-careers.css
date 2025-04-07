@@ -9,3 +9,8 @@ body.archive.post-type-archive.post-type-archive-thrive-jobs main section{
 .archive.post-type-archive.post-type-archive-thrive-jobs h3{
     max-width: fit-content;
 }
+
+.archive.post-type-archive.post-type-archive-thrive-jobs .taxonomy-thrive-location a{
+    pointer-events: none;
+    cursor: default;
+}

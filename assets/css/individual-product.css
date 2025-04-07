@@ -41,6 +41,13 @@
     color: white;
 }
 
+.product-template-default.single-product main .wc-pao-addons-container #product-addons-total .wc-pao-addon-name{
+    display: none;
+}
+
+.product-template-default.single-product main .wc-pao-addons-container #product-addons-total ul li:not(:first-child) {
+    padding-left: 1rem;
+}
 
 .product-template-default.single-product main .wp-block-woocommerce-product-details .woocommerce-Tabs-panel{
     background-color: #ededed;

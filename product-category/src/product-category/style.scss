@@ -7,6 +7,9 @@
 
 .thrive-product-category-section {
 	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 }
 
 .thrive-product-category-section h2 {
@@ -23,6 +26,7 @@
 	margin: 0 auto;
 	padding: 0.5rem 0.5rem;
 	justify-content: space-between;
+	width: 100%;
 
 	overflow-y: hidden;
 	scrollbar-width: auto;
@@ -87,4 +91,22 @@
 	.thrive-category-card {
 		width: 70vw;
 	}
+}
+
+.thrive-product-category-section .thrive-view-all-button {
+	width: max-content;
+	align-self: flex-end;
+	margin-top: 1rem;
+	padding: 1rem;
+}
+
+.thrive-product-category-section .thrive-view-all-button::after {
+	content: " →";
+	height: fit-content;
+}
+
+.thrive-product-category-section .thrive-view-all-button:hover {
+	background-color: #3b3b3b;
+	color: white;
+	border-radius: 0px;
 }

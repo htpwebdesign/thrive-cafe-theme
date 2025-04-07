@@ -1,0 +1,88 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.thrive-product-category-section {
+	padding: 0.5rem;
+}
+
+.thrive-product-category-section h2 {
+	margin: 1rem 0.5rem;
+}
+
+.thrive-category-list {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	gap: 1rem;
+	scroll-behavior: smooth;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0.5rem 0.5rem;
+	max-width: fit-content;
+
+	overflow-y: hidden;
+	scrollbar-width: auto;
+
+
+	&::-webkit-scrollbar {
+		height: 0.5rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #ccc;
+		border-radius: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #f0f0f0;
+	}
+}
+
+.thrive-category-item {
+	min-width: 200px;
+	height: 16rem;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	flex-shrink: 0;
+	background-color: #fff;
+	position: relative;
+}
+
+.thrive-category-item:hover {
+	position: relative;
+	transform: scale(1.05);
+
+}
+
+.thrive-category-image {
+	width: 100%;
+	height: 100%;
+}
+
+.thrive-category-name {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}
+
+.thrive-category-card a {
+	z-index: 10;
+}
+
+@media (max-width: 768px) {
+	.thrive-category-card {
+		width: 70vw;
+	}
+}

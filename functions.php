@@ -107,3 +107,5 @@ add_filter( 'wpseo_metabox_prio', 'yoast_to_bottom' );
 
 //Adding custom post types and custom taxonomies
 require get_template_directory() . '/inc/post-types-taxonomies.php';
+
+require get_template_directory() . '/product-category/product-category.php';

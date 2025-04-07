@@ -45,6 +45,14 @@
 .page-id-82 .wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained{
     padding: 1rem;
 }
+
+.page-id-82 .wp-block-media-text .wp-block-button a{
+    background-color: #fff;
+    /* border-radius: 0px; */
+}
+.page-id-82 .wp-block-media-text .wp-block-button a:hover{
+    background-color: #8b8b8b;
+}
 @media (min-width: 600px) {
     .page-id-82 .wp-block-media-text .wp-block-media-text__media{
         margin: 0;

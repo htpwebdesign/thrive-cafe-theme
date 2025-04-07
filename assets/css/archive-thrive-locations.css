@@ -1,3 +1,10 @@
 .post-type-archive-thrive-locations main div{
-    padding: 0 .5rem;
+    padding: 0.5rem;
+}
+
+.post-type-archive-thrive-locations main ul .wp-block-post{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
 }

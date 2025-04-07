@@ -38,24 +38,26 @@ function fwd_render_product_category( $attributes ) {
 	));
 
 	if (!empty($terms) && !is_wp_error($terms)) {
-		echo '<div class="thrive-category-list">';
+		echo '<section class="thrive-product-category-section">';
+		echo '<h2>See Our Menu</h2>';
+		echo '<ul class="thrive-category-list">';
 		foreach ($terms as $term) {
 			if($term->slug === 'combo' || $term->slug === 'gift-cards' || $term->slug === 'cold' || $term->slug === 'hot') {
-				continue; // Skip the terms with slugs 'combo', 'gift-card', and 'gift-box'
+				continue; 
 			}
 			$image_id = get_term_meta($term->term_id, 'thumbnail_id', true);
 			$image_url = wp_get_attachment_url($image_id);
 			$link = get_term_link($term);
 			
-			echo '<div class="thrive-category-card">';
+			echo '<li class="thrive-category-item">';
 			echo '<a href="' . esc_url($link) . '">';
-			echo '<div class="thrive-category-image" style="background-image: url(' . esc_url($image_url) . ')">';
-			echo '<div class="thrive-category-name">' . esc_html($term->name) . '</div>';
-			echo '</div>';
+			echo '<img class="thrive-category-image"  src="'  . esc_url($image_url) . '"alt="' . esc_attr($term->name) . '">';
+			echo '<h3 class="thrive-category-name">' . esc_html($term->name) . '</h3>';
 			echo '</a>';
-			echo '</div>';
+			echo '</li>';
 		}
-		echo '</div>';
+		echo '</ul>';
+		echo '</section>';
 	} else {
 		echo '<p>No categories found.</p>';
 	}

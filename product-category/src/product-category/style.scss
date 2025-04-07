@@ -5,55 +5,63 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+.thrive-product-category-section {
+	padding: 0.5rem;
+}
+
+.thrive-product-category-section h2 {
+	margin: 1rem 0.5rem;
+}
+
 .thrive-category-list {
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	gap: 1rem;
 	scroll-behavior: smooth;
-	-webkit-overflow-scrolling: touch;
-	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0.5rem 0.5rem;
+	max-width: fit-content;
+
+	overflow-y: hidden;
+	scrollbar-width: auto;
+
+
+	&::-webkit-scrollbar {
+		height: 0.5rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #ccc;
+		border-radius: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #f0f0f0;
+	}
 }
 
-.thrive-category-card {
+.thrive-category-item {
 	min-width: 200px;
-	height: 250px;
+	height: 16rem;
 	overflow: hidden;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease;
 	flex-shrink: 0;
 	background-color: #fff;
+	position: relative;
 }
 
-.thrive-category-card:hover {
+.thrive-category-item:hover {
 	position: relative;
+	transform: scale(1.05);
 
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.2);
-		transition: opacity 0.3s ease;
-		opacity: 0;
-	}
-
-	&:hover::after {
-		opacity: 1;
-	}
 }
 
 .thrive-category-image {
 	width: 100%;
 	height: 100%;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	position: relative;
 }
 
 .thrive-category-name {
@@ -66,6 +74,7 @@
 	font-size: 1.1rem;
 	position: absolute;
 	bottom: 0;
+	margin: 0;
 }
 
 .thrive-category-card a {

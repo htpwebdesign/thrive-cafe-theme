@@ -56,3 +56,7 @@
 .archive.tax-product_tag main {
     padding: 1rem;
 }
+
+.wc-block-components-product-button__button{
+    border-radius: 0px;
+}

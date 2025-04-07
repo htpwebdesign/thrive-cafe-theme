@@ -1,3 +1,7 @@
 .thrive-jobs-template-default.single main{
     padding: 0 1rem;
 }
+
+.thrive-jobs-template-default.single main .gform-footer{
+    justify-content: center;
+}

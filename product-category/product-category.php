@@ -57,6 +57,7 @@ function fwd_render_product_category( $attributes ) {
 			echo '</li>';
 		}
 		echo '</ul>';
+		echo '<a href="shop" class="thrive-view-all-button">View All</a>';
 		echo '</section>';
 	} else {
 		echo '<p>No categories found.</p>';

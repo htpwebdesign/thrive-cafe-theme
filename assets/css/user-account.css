@@ -13,3 +13,7 @@
 .page-id-15 .addresses .title .edit{
     float: none;
 }
+
+.page-id-15 .woocommerce-MyAccount-content .woocommerce-notices-wrapper{
+    display: none;
+}

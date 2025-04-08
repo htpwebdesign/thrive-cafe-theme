@@ -198,6 +198,9 @@ body.archive.post-type-archive.post-type-archive-thrive-jobs main section{
 /* LOCATIONS ARCHIVE PAGE STYLES */
 
 /* ************************************ */
+.post-type-archive-thrive-locations main{
+    margin-top: 0;
+}
 .post-type-archive-thrive-locations main div{
     padding: 0.5rem;
 }

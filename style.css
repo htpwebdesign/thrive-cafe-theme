@@ -81,7 +81,7 @@ footer .wp-block-buttons{
     .wp-block-template-part .wp-block-group-is-layout-flex{
         gap: 1rem;
     }
-    .wp-block-template-part .wp-block-button__link.wp-element-button{
+    header.wp-block-template-part .wp-block-button__link.wp-element-button{
         display: inline-block;
     }
     footer .wp-block-navigation,

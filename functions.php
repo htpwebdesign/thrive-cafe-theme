@@ -14,12 +14,6 @@ function thrive_enqueues(){
 			'12.1.0'
 		);
 		wp_enqueue_style(
-			'product_cards style',
-			get_theme_file_uri('assets/css/product-card.css'),
-			array(),
-			'12.1.1'
-		);
-		wp_enqueue_style(
 			'job-styles',
 			get_theme_file_uri('blocks/job-details/job-details.css'),
 			array(),
@@ -31,56 +25,6 @@ function thrive_enqueues(){
 			array(),
 			'12.1.3'
 		);
-		wp_enqueue_style(
-			'archive_products style',
-			get_theme_file_uri('assets/css/archive-product.css'),
-			array(),
-			'12.1.5'
-   );
-   wp_enqueue_style(
-	   'front-apge-styles',
-	   get_theme_file_uri('assets/css/front-page.css'),
-	   array(),
-	   '12.1.4'
-	);
-	
-	
-	wp_enqueue_style(
-		'careers archive styles',
-		get_theme_file_uri('assets/css/archive-careers.css'),
-		array(),
-		'12.1.6'
-	);
-	wp_enqueue_style(
-		'single job styles',
-		get_theme_file_uri('assets/css/individual-job.css'),
-		array(),
-		'12.1.7'
-    );
-	wp_enqueue_style(
-		'header-styles',
-		get_theme_file_uri('assets/css/header.css'),
-		array(),
-		'12.1.15'
-	);
-	wp_enqueue_style(
-		'location-styles',
-		get_theme_file_uri('assets/css/archive-thrive-locations.css'),
-		array(),
-		'12.1.18'
-	);
-	wp_enqueue_style(
-		'user account page styles',
-		get_theme_file_uri('assets/css/user-account.css'),
-		array(),
-		'12.1.9'
-	);
-	wp_enqueue_style(
-		'individual product styles',
-		get_theme_file_uri('assets/css/individual-product.css'),
-		array(),
-		'12.1.10'
-	);
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 

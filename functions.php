@@ -72,6 +72,29 @@ function block_post_type_access() {
 }
 add_action('template_redirect', 'block_post_type_access');
 
+//removing the comments from the admin bar so that the clients cannot acces it
+// Remove Comments from admin menu
+function remove_comments_from_admin() {
+	remove_menu_page('edit-comments.php');
+}
+add_action('admin_menu', 'remove_comments_from_admin');
+
+// Remove Comments from admin bar
+function remove_comments_from_admin_bar($wp_admin_bar) {
+	$wp_admin_bar->remove_node('comments');
+}
+add_action('admin_bar_menu', 'remove_comments_from_admin_bar', 999);
+
+// Redirect any direct access to comments section
+function block_comment_pages() {
+	global $pagenow;
+	if ($pagenow === 'edit-comments.php') {
+		wp_redirect(admin_url(), 301);
+		exit;
+	}
+}
+add_action('admin_init', 'block_comment_pages');
+
 //adding the company logo to the wordpress login page
 function custom_thrive_login_page() {
     ?>
@@ -90,7 +113,7 @@ function custom_thrive_login_page() {
 		}
 
         body.login div#login h1 a {
-            background-image: url(http://localhost/thrive_cafe/wp-content/uploads/2025/03/cropped-Thrive.png); /* Replace with your Media URL */
+            background-image: url(https://thrivecafe.bcitwebdeveloper.ca/wp-content/uploads/2025/03/cropped-Thrive.png); /* Replace with your Media URL */
             background-size: contain;
             background-repeat: no-repeat;
             width: 100%;

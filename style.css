@@ -384,6 +384,9 @@ body.archive.post-type-archive.post-type-archive-thrive-jobs main section{
     .product-template-default.single-product main .info-column .product-description{
         max-width: 100%;
     }
+    .product-template-default.single-product main .info-column {
+        flex-direction: column;
+    }
 }
 /* ************************************ */
 

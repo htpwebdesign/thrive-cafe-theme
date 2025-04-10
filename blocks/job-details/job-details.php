@@ -28,7 +28,7 @@ if( get_post_type() === 'thrive-jobs' ) :
         <?php endif; ?>
         <?php if( $job_contact ): ?>
             <div class="job-contact">
-                <strong>Contact Email:</strong> <?php echo esc_html( $job_contact ); ?>
+                <strong>Contact Email:</strong> <a href="mailto:<?php echo esc_html( $job_contact ); ?>"><?php echo esc_html( $job_contact ); ?></a>
             </div>
         <?php endif; ?>
         <?php if( $salary ): ?>

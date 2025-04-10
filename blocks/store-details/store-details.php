@@ -16,6 +16,6 @@ $contact = get_field('contact', $post_id);
         <p><strong>Email:</strong> <a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a></p>
     <?php endif; ?>
     <?php if ($contact): ?>
-        <p><strong>Contact:</strong> <?php echo esc_html($contact); ?></p>
+        <p><strong>Tel:</strong> <a href="tel:<?php echo esc_attr($contact); ?>"><?php echo esc_html($contact); ?></a></p>
     <?php endif; ?>
 </div>

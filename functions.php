@@ -25,6 +25,14 @@ function thrive_enqueues(){
 			array(),
 			'12.1.3'
 		);
+        if(is_shop()){
+		wp_enqueue_script(
+			'thrive-scroll-to-top',
+			get_theme_file_uri( 'assets/js/scroll-to-top.js'),
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			array('strategy' => 'defer')
+		);}
 }
 add_action( 'wp_enqueue_scripts', 'thrive_enqueues' );
 
